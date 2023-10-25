@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>student management system</title>
+  <style>
+    /* Basic CSS styles can be added here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #122eacc7;
+      color: #854c4c;
+      text-align: center;
+      padding: 10px;
+    }
+
+
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+
+
+
+
+
+<body>
+  <header>
+    <h1>Student management system</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About us
+        </a></li>
+
+
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+
+
+    </ul>
+  </nav>
+
+
+
+
+
+
+  <div class="container">
+    <h2>Welcome to Student management system</h2>
+    <p>A Student Management System is a software application that helps educational institutions efficiently manage
+      student data, including personal information, academic records, attendance, and financial transactions.<br> It
+      simplifies administrative tasks, enhances communication, and provides insights into student performance.</p>
+    <ul>
+
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          body {
+            font-family: 'Lato', sans-serif;
+          }
+
+          .overlay {
+            height: 100%;
+            width: 100%;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+          }
+
+          .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+          }
+
+          .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+          }
+
+          .overlay a:hover,
+          .overlay a:focus {
+            color: #f1f1f1;
+          }
+
+          .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+          }
+
+          @media screen and (max-height: 450px) {
+            .overlay a {
+              font-size: 20px
+            }
+
+            .overlay .closebtn {
+              font-size: 40px;
+              top: 15px;
+              right: 35px;
+            }
+          }
+        </style>
+      </head>
+
+
+
+    </ul>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+
+
+
+      <h2>Student List</h2>
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Student ID</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>123456</td>
+          <td>john@example.com</td>
+        </tr>
+
+
+        <!-- Add more rows for additional students -->
+      </table>
+
+    </body>
+
+    </html>
+
+
+    <head>
+      <title>User Input Example</title>
+    </head>
+
+    <body>
+      <!-- Your content goes here -->
+      <form>
+
+        <h2>Add Student</h2>
+
+        <label for="userInput">Studet name:</label>
+        <input type="text" id="userInput" name="userInput"><br><br>
+
+        <label for="userInput">student id:</label>
+        <input type="text" id="userInput" name="userInput"><br><br>
+        <label for="userInput">e-mail:</label>
+        <input type="text" id="userInput" name="userInput"><br><br>
+
+        <button type="button" onclick="displayInput()">Submit</button>
+      </form>
+      <div id="output"></div>
+      <script>
+        function addItem () {
+          var userInput = document.getElementById("userInput").value;
+          var itemList = document.getElementById("itemList");
+
+          if (userInput.trim() !== "") {
+            var listItem = document.createElement("li");
+            listItem.textContent = userInput;
+            itemList.appendChild(listItem);
+            document.getElementById("userInput").value = ""; // Clear the input field
+          }
+        }
+      </script>
+      <script>
+        function displayInput () {
+          var userInput = document.getElementById("userInput").value;
+          document.getElementById("output").textContent = "You entered: " + userInput;
+        }
+      </script>
+
+
+    </body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #888;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    /* Close Button */
+    .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="modal.css">
+</head>
+
+<body>
+  <button id="openModal">about us</button>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>aAbout us</h2>
+      <p>Welcome to [STUDENT MANAGEMENT SYSTEM], a project created by two friends who are passionate about education and
+        technology.
+
+        Meet the Teamc<br>
+
+        [DIVYANK MAHAR]: A [intrested person on making website and designing them].<br> [DIVYANK MAHAR] is responsible
+        for [cL].Welcome to [Student Management System ], a<br> project created by two friends who are passionate about
+        education and technology.
+
+        Meet the Team
+
+        [DIVYANK MAHAR]: A [intrested person on making website and designing them].<br> [divyank mahar] is responsible
+        for Welcome to [ Student Management System],<br> a project created by two friends who are passionate about
+        education and technology.
+
+        Meet the Team<br>
+
+        [divyank mahar]: A [brief description of your background and<br> interests]. [divyank mahar] is responsible for
+        [structing the website ].<br>
+
+        [AKASH KUMAR]: [a person who is intrested on coding].<br> [AKASH KUMAR]plays a key role in [designing the web
+        site using css]<br>
+
+
+
+
+    </div>
+  </div>
+  <script>// Get the modal and button elements
+    var modal = document.getElementById("myModal");
+    var openBtn = document.getElementById("openModal");
+    var closeBtn = document.getElementById("closeModal");
+
+    // Open the modal when the button is clicked
+    openBtn.addEventListener("click", function () {
+      modal.style.display = "block";
+    });
+
+    // Close the modal when the close button is clicked
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+    // Close the modal when clicking outside the modal content
+    window.addEventListener("click", function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+  <script src="modal.js"></script>
+</body>
+
+</html>
